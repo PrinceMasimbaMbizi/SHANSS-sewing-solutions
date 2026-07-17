@@ -124,9 +124,30 @@ header {
 .hamburger {
 
     display: none;
-    font-size: 30px;
+
+    width: 30px;
+    height: 30px;
+
+    border-radius: 8px;
+
+    justify-content: center;
+    align-items: center;
+
     cursor: pointer;
+
     color: var(--primary);
+
+    font-size: 16px;
+
+    transition: .3s;
+
+}
+
+.hamburger:hover {
+
+    color: #c2185b;
+
+    transform: scale(1.05);
 
 }
 
@@ -523,7 +544,7 @@ footer p {
 @media (max-width:991px) {
 
     .hamburger {
-        display: block;
+        display: flex;
         cursor: pointer;
         z-index: 1001;
     }
